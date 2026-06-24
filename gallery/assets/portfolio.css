@@ -1,0 +1,338 @@
+/* CSS Document */
+@font-face {
+    font-family: NovaRound;
+    src: url("/fonts/NovaRound-Regular.ttf");
+  }
+  @font-face {
+    font-family: Cherish;
+    src: url("/fonts/Cherish.ttf");
+  }
+  @font-face {
+    font-family: Patters;
+    src: url("/fonts/PattersBasic-Regular.ttf");
+  }
+  @font-face {
+    font-family: PressStart2P;
+    src: url("/fonts/PressStart2P-Regular.ttf");
+  }
+  
+  :root {
+    /* These variables exist so you can make quick and simple style changes without much CSS knowledge */
+    /* applies to all areas */
+    --font-family: NovaRound;
+    --font-size: 14px;
+    --line-height: 1.3em;
+    --font-color: #4e082b;
+    --link-color: white;
+    --link-text-decoration: none;
+    /* main content (between sidebars) */
+    --content-padding: 10px;
+    --content-bg-color: #ffc9db;
+    /* header */
+    --header-font: PressStart2P;
+    --header-height: 150px;
+    --header-background: url("/graphics/banner.png");
+    --header-margin-bottom: 0px;
+    /* sidebar */
+    --sidebar-margin: 10px;
+    --sidebar-width: 150px;
+    --sidebar-padding: 15px;
+    --sidebar-bg-color: #f992b4;
+    /* navbar */
+    --navitems-alignment: center;
+    --space-between-navitems: 20px;
+    --navbar-margin-bottom: 10px;
+    --nav-bg-color: #ed487e;
+    /* container */
+    --container-width: 90%;
+    --container-bg-color: #ffc9db;
+    /* controls the gap between the content and the footer */
+    --row-gap: 5px;
+    /* To add scrollbars to your sidebars, just make the height a px value and change overflow to 'auto' */
+    --sidebar-height: 100%;
+    --sidebar-overflow: hidden;
+    --background-color: #ffc9db;
+    --background-image: url(/graphics/wallpaper.png);
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scrollbar-color: #ff4d94 #ffcce0;
+    scrollbar-width: thin;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--font-color);
+    background-image: var(--background-image);
+    /* FUCK gradients */
+    /*background-image: linear-gradient(to bottom, rgba(226, 131, 145, .5), rgba(201, 76, 95, 0.50)), var(--background-image);*/
+  }
+  
+  img {
+    object-fit: contain;
+  }
+  
+  body a {
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: var(--link-text-decoration);
+  }
+  
+  main {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  
+  .flex {
+    display: flex;
+    margin-bottom: var(--row-gap);
+  }
+  
+  .content-wrap {
+    margin-top: var(--content-margin-top);
+  }
+  
+  article {
+    width: 60%;
+    margin-bottom: var(--row-gap);
+    background-color: var(--content-bg-color);
+    border: double #ffffff;
+  /*border-image: url("graphics/pf024-plate-wa01.gif") 6 round;*/
+    border-radius: 15px;
+    padding: var(--content-padding);
+    padding-top: var(--sidebar-padding);
+    flex-grow: 1;
+  }
+  
+  article a{
+      color: #990033;
+  }
+  
+  article a:hover{
+      color: var(--link-color);
+  }
+  
+  document {
+    width: 40%;
+    margin-bottom: var(--row-gap);
+    background-color: var(--content-bg-color);
+    border: double #ffffff;
+    border-radius: 15px;
+    padding: var(--content-padding);
+    padding-top: var(--sidebar-padding);
+    flex-grow: 1;
+  }
+
+  document img {
+    max-width: 100%;
+  }
+
+  
+  
+  aside {
+    width: var(--sidebar-width);
+    margin-right: var(--sidebar-margin);
+    margin-bottom: var(--row-gap);
+    height: var(--sidebar-height);
+    overflow: var(--sidebar-overflow);
+    background-color: var(--sidebar-bg-color);
+    padding: var(--sidebar-padding);
+    border: double #ffffff;
+    border-radius: 15px;
+    color: var(--font-color);
+  }
+  aside li {
+    padding: 10px;
+    list-style: none;
+    
+  }
+  
+  aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside select {
+    max-width: 100px;
+  }
+  
+  header {
+    background-position: center center;
+    border-left-style: double;
+    border-right-style: double;
+    border-top-style: double;
+    border-radius: 15px 15px 0px 0px;
+    border-color: #ffffff;
+  }
+  
+  nav {
+    margin-bottom: var(--row-gap);
+  }
+  
+  nav ul {
+    margin-left: 0;
+    text-align: var(--navitems-alignment);
+    margin-top: 0;
+    margin-bottom: var(--navbar-margin-bottom);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--nav-bg-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-color: #ffffff;
+    border-style: none double double;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding-right: var(--space-between-navitems);
+    font-family: var(--header-font);
+  }
+  
+  h1 {
+    font-family: var(--header-font);
+  }
+  /* To keep your site RESPONSIVE, make sure this variable matches the width for --container-width UNLESS --container-width is 100% - if it's 100%, you'll need to manually input a breakpoint. */
+  @media only screen and (max-width: 1000px) {
+    .flex {
+      flex-wrap: wrap;
+    }
+  
+    aside {
+      width: 100%;
+      display: block;
+      order: 3;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    article {
+      width: 100%;
+  
+      display: block;
+      order: 2;
+      margin-bottom: 10px;
+    }
+
+    document {
+        width: 100%;
+        display: block;
+        order: 1;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+  }
+  
+  .artex {
+    text-align: center;
+    font-weight: bold;
+    color: #600f44;
+    display: flex;
+    width:100%;
+    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .artex a {
+    text-decoration: none;
+    color: #600f44;
+  }
+  
+  #updates {
+    max-height: 200px;
+    overflow: auto;
+    color: #88051a;
+  }
+  
+  a .container p {
+    font-size: 14px;
+  }
+  
+  .card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%;
+    border-radius: 5px; /* 5px rounded corners */
+    border: double;
+    margin: 5px;
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  .card img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .stamps img {
+    height: 56px;
+  }
+  
+  #gallery {
+    width: 210px;
+  }
+  
+  #gallery img {
+    width: 200px;
+  }
+  
+  #icons {
+    width: 150px;
+  }
+  
+  #icons img {
+    width: 100px;
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .imgview {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    color: #450040;
+  }
+  
+  .chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  table,
+  td,
+  tr {
+    border: 1px solid var(--nav-bg-color);
+    color: black;
+  }
+  
