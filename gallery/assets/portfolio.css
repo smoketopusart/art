@@ -15,11 +15,26 @@
     font-family: PressStart2P;
     src: url("/fonts/PressStart2P-Regular.ttf");
   }
-  
+  @font-face {
+    font-family: Amorlate;
+    src: url("/fonts/Amorlate.otf");
+  }
+  @font-face {
+    font-family: Nihonium;
+    src: url("/fonts/Nihonium113-Console.ttf");
+  }
+  @font-face {
+    font-family: Steven;
+    src: url("/fonts/Steven.ttf");
+  }
+  @font-face {
+    font-family: Yoster;
+    src: url("/fonts/yoster.ttf");
+  }
   :root {
     /* These variables exist so you can make quick and simple style changes without much CSS knowledge */
     /* applies to all areas */
-    --font-family: NovaRound;
+    --font-family: Nihonium;
     --font-size: 14px;
     --line-height: 1.3em;
     --font-color: #4e082b;
@@ -33,6 +48,8 @@
     --header-height: 150px;
     --header-background: url("/graphics/banner.png");
     --header-margin-bottom: 0px;
+    /* Titles */
+    --title-font: Amorlate;
     /* sidebar */
     --sidebar-margin: 10px;
     --sidebar-width: 150px;
@@ -53,6 +70,7 @@
     --sidebar-overflow: hidden;
     --background-color: #ffc9db;
     --background-image: url(/graphics/wallpaper.png);
+    
   }
   
   * {
@@ -203,6 +221,11 @@
   h1 {
     font-family: var(--header-font);
   }
+
+  h3{
+    font-family: var(--title-font);
+  }
+
   /* To keep your site RESPONSIVE, make sure this variable matches the width for --container-width UNLESS --container-width is 100% - if it's 100%, you'll need to manually input a breakpoint. */
   @media only screen and (max-width: 1000px) {
     .flex {
