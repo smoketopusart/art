@@ -1,0 +1,46 @@
+html{
+  background: #f992b4 url("/graphics/wallpaper.png") repeat bottom;
+  
+}
+main{
+  border: 5px double #ffffff;
+  border-radius: 30px;
+  height: auto;
+  width: 45%;
+  margin: auto;
+  padding: 10px;
+  background-color: #ffc9db;
+  box-shadow: 2px 2px 4px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (orientation:portrait){
+  main{
+    height: 50%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 5%;
+    right: 5%;
+    margin: auto;
+  }
+}
+
+section{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+img{
+  width: 20%;
+}
+
+#enter img{
+  width: 50%;
+}

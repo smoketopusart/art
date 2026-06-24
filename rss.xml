@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Smoketopus' Website</title>
+  <description>Smoketopus' art website, with a focus on robot art and the occasional game</description>
+  <category>Art</category>
+  <language>en-us</language> 
+  <link>https://smoketopus.neocities.org/</link>
+  <lastBuildDate>
+    Thu, 11 Apr 2024 05:00:21 +0000
+  </lastBuildDate>
+  <ttl>1500</ttl>
+  <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+  <atom:link href="https://smoketopus.neocities.org/rss.xml" rel="self" type="application/rss+xml" />
+<!--Get timestamps from https://timestampgenerator.com
+
+Template
+
+<item>
+  <title></title>
+  <description>
+	<![CDATA[<img src="https://i.imgur.com/y3MknuE.png"/>]]>
+  </description>
+  <link>https://smoketopus.neocities.org/</link>
+  <pubDate>
+  </pubDate>
+  <category>Art</category>
+  <guid></guid>
+</item>
+
+
+-->  
+
+
+<item>
+  <title>April Gallery Update!</title>
+  <description>
+	<![CDATA[<img src="https://i.imgur.com/YWhLi2o.png"/>]]>
+	<![CDATA[<img src="https://i.imgur.com/wMXodtu.png"/>]]>
+	<![CDATA[<img src="https://i.imgur.com/5LwYyJT.png"/>]]>
+	<![CDATA[<img src="https://i.imgur.com/FNZWhlZ.png"/>]]>
+  </description>
+  <link>https://smoketopus.neocities.org/gallery/archive/2024</link>
+  <pubDate>
+  Fri, 03 May 2024 15:30:25 +0000
+  </pubDate>
+  <category>Art</category>
+  <guid></guid>
+</item>
+
+<item>
+  <title>April 20 Art Dump</title>
+  <description>
+	<![CDATA[<img src="https://i.imgur.com/Gq4wz4r.jpeg"/>]]>
+	<![CDATA[<img src="https://i.imgur.com/Hctq7RT.jpeg"/>]]>
+	<![CDATA[<img src="https://i.imgur.com/aUVugC9.jpeg"/>]]>
+  </description>
+  <link>https://smoketopus.neocities.org/gallery/archive/2024</link>
+  <pubDate>
+  Sat, 20 Apr 2024 21:23:54 +0000
+  </pubDate>
+  <category>Art</category>
+  <guid></guid>
+</item>
+
+<item>
+  <title>March and April Art Dump</title>
+  <description>
+	Uploading all my art from January and February thus far!
+	<![CDATA[<img src="https://i.imgur.com/y3MknuE.png"/>]]>
+	<![CDATA[<img src="https://i.imgur.com/5EcKXQB.png"/>]]>
+	<![CDATA[<img src="https://i.imgur.com/qhcJmk2.png"/>]]>
+  </description>
+  <link>https://smoketopus.neocities.org/gallery/archive/2024</link>
+  <pubDate>
+  Thu, 11 Apr 2024 05:00:21 +0000
+  </pubDate>
+  <category>Art</category>
+  <guid >https://i.imgur.com/y3MknuE.png</guid>
+</item>
+
+<item>
+  <title>Jan and Feb Art Dump</title>
+  <description>
+    Uploading all my art from January and February so far! Happy Leap day, everybody!
+  </description>
+  <link>https://smoketopus.neocities.org/gallery/archive/2024</link>
+  <pubDate>
+    Thu, 29 Feb 2024 19:11:53 +0000
+  </pubDate>
+  <category>Art</category>
+  <enclosure url="https://i.imgur.com/HluN79a.png" length="1687152" type="image/png" />
+  <guid>https://i.imgur.com/HluN79a.png</guid>
+</item>
+
+<item>
+  <title>Art Dump</title>
+  <description>
+	Uploading all the Art I've done in February so far!
+  </description>
+  <link>https://smoketopus.neocities.org/gallery</link>
+  <pubDate>
+  Sat, 18 Feb 2023 17:07:34 +0000
+  </pubDate>
+  <category>Art</category>
+  <enclosure url="https://i.imgur.com/MbW7UAI.png" length="in bytes" type="image/png" />
+  <guid>https://i.imgur.com/MbW7UAI.png</guid>
+</item>
+
+<item>
+  <title>Posca Patchouli</title>
+  <description>
+  A posca painting of Patchoulli Knowledge from Touhou casting a magic spell
+  </description>
+  <link>https://smoketopus.neocities.org//gallery/archive/2023</link>
+  <pubDate>
+  Thu, 19 Jan 2023 15:52:05 +0000
+  </pubDate>
+  <category>Art</category>
+  <enclosure url="https://i.imgur.com/mGIjwQp.png" length="2026431" type="image/png" />
+  <guid>https://i.imgur.com/mGIjwQp.png</guid>
+</item>
+
+<item>
+  <title>Gundam Witch, TFP Comic, and Ultra Magnus, wow!</title>
+  <description>
+    Update featuring four new pieces of artwork! We have one based on episode 12 of Gundam Witch, a comic with Starscream and Shockwave, a followup drawing of Predaking, and the grumpiest Ultra Magnus you can imagine
+  </description>
+  <link>https://smoketopus.neocities.org/gallery/archive/2023</link>
+  <pubDate>
+    Thu, 19 Jan 2023 15:52:05 +0000
+  </pubDate>
+  <enclosure url="https://i.imgur.com/tPlcdgE.png" length="1510517" type="image/png" />
+  <category>Art</category>
+  <guid>https://i.imgur.com/tPlcdgE.png</guid>
+</item>
+
+
+<item>
+  <title>Scolipede</title>
+  <description>
+    Sketchpage of the Pokemon Scolipede from a variety of angles.
+  </description>
+  <link>https://smoketopus.neocities.org/gallery/archive/2023</link>
+  <pubDate>
+    Mon, 09 Jan 2023 00:07:45 +0000
+  </pubDate>
+  <category>Art</category>
+  <guid>https://imgur.com/PKoCTTe</guid>
+</item>
+  
+<item>
+  <title>TFP Sketchpage</title>
+  <description>
+    Added art of TFP Breakdown, Soundwave, and Arcee
+  </description>
+  <link>https://smoketopus.neocities.org/gallery/archive/2023</link>
+  <pubDate>
+    Mon, 09 Jan 2023 00:05:49 +0000
+  </pubDate>
+  <category>Art</category>
+  <guid>https://imgur.com/Yd92wv5</guid>
+</item>
+  
+  <item>
+  <title>Decepticon No More</title>
+  <description>
+    Volume 2 of my Transformers Prime AU!
+  </description>
+  <link>https://smoketopus.neocities.org/comics/decepticonnomore</link>
+  <pubDate>
+    Tue, 22 Nov 2022 01:25:41 +0000
+  </pubDate>
+  <category>Comic</category>
+  <guid>https://smoketopus.neocities.org/comics/decepticonnomore</guid>
+</item>
+  
+  
+ <item>
+  <title>Mini Roommate</title>
+  <description>
+    Uploaded an older comic from 2019, done in october, featuring my fursona getting a roommate!
+  </description>
+  <link>https://smoketopus.neocities.org/comics/miniroommate/</link>
+  <pubDate>
+    Mon, 26 Sep 2022 18:54:23 +0000
+  </pubDate>
+  <category>Comic</category>
+  <guid>https://smoketopus.neocities.org/comics/miniroommate/</guid>
+</item>  
+
+<item>
+  <title>Iron Leaguer Character Sorter</title>
+  <description>
+    Added a little game that lets you sort through every single iron leaguer character to see who your faves are! WARNING: if you include the minor characters it can be long
+  </description>
+  <link>https://smoketopus.neocities.org/funstuff/ironleaguersort/</link>
+  <pubDate>
+    Thu, 15 Sep 2022 14:56:22 +0000
+  </pubDate>
+  <category>Game</category>
+  <guid>https://smoketopus.neocities.org/funstuff/ironleaguersort/</guid>
+</item>  
+
+<item>
+  <title>Art Archive</title>
+  <description>
+    Archive showing every single piece of my art that I could find from 2008 to 2022.
+  </description>
+  <link>https://smoketopus.neocities.org/gallery/archive/</link>
+  <pubDate>
+    Thu, 08 Sep 2022 18:10:54 +0000
+  </pubDate>
+  <category>Art</category>
+  <guid>https://smoketopus.neocities.org/gallery/archive/</guid>
+</item> 
+
+<item>
+  <title>Con Creep</title>
+  <description>
+    My first minicomic, made in 2019, and also the one I am like "oh god is this a thing people should even see" It is about the time when I was 13 that I went to an anime convention and some guy (who claimed to be 16...) started flirting with me. This was done for a comics class when the prompt was "make a comic about a really bad decision you made" and my decision was "going into a stranger's hotel room at an anime con when I was 13." I didn't really process the event as what it was until I made this so reading it in this form DID make me realize how utterly fucked up it was as far as things that have happened to me.
+  </description>
+  <link>https://smoketopus.neocities.org/comics/concreep/</link>
+  <pubDate>
+    Wed, 07 Sep 2022 18:10:54 +0000
+  </pubDate>
+  <category>Comic</category>
+  <guid>https://smoketopus.neocities.org/comics/concreep/</guid>
+</item> 
+
+<item>
+  <title>Shadowzoned</title>
+  <description>
+    A Transformers Prime comic, that takes place after the events of the series.
+  </description>
+  <link>https://smoketopus.neocities.org/comics/shadowzoned/</link>
+  <pubDate>
+    Sat, 27 Aug 2022 20:07:06 +0000
+  </pubDate>
+  <category>Comic</category>
+  <guid>https://smoketopus.neocities.org/comics/shadowzoned/</guid>
+</item>
+
+</channel>
+</rss>

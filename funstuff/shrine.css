@@ -1,0 +1,30 @@
+@charset "utf-8";
+@font-face { font-family: NovaRound; src: url('/fonts/NovaRound-Regular.ttf'); } 
+@font-face { font-family: Cherish; src: url('/fonts/Cherish.ttf'); } 
+@font-face { font-family: Patters; src: url('/fonts/PattersBasic-Regular.ttf'); } 
+@font-face { font-family: PressStart2P; src: url('/fonts/PressStart2P-Regular.ttf'); } 
+.content {
+	background-color: #FFFFFF;
+	color: #4D0384;
+}
+	.Nav a{
+	color: white;
+	}
+.Nav {
+	background-color: black;
+	color: white;
+}
+
+article {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+	padding: 10px;
+}
+
+.info, table,td{
+	border: 1px solid;
+	color:black;
+}
+
+

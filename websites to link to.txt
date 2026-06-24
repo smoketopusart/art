@@ -1,0 +1,16 @@
+if you're reading this, no you aren't 
+
+
+graphics/webpage stuff
+	graphics:
+		https://rivendell.neocities.org/backgrounds/
+	non-graphics stuff
+		https://pollcode.com/ for polls
+		https://learn.sadgrl.online/how-to-display-last-updated-and-visitor-number-statistics-on-neocities/ last updated for neocities
+		https://web.badges.world/ web badges
+		https://gifypet.neocities.org/ pet for your page
+		https://codepen.io/sadness97/pen/RwKbNWW webamp player
+		https://rssguide.neocities.org/ add rss to your neocities
+
+
+transformers sites

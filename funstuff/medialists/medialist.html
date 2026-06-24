@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="/scripts/route.js"></script>
+		<link href="/style.css" rel="stylesheet" type="text/css">
+		<link href="log.css" rel="stylesheet" type="text/css">
+		<script>
+			$(function() {
+				$("aside").load("/nav/sidenavfun.html");
+			});
+		</script>
+		<style>
+			.cards {
+				display: flex;
+				justify-content: space-between;
+        flex-direction: column;
+        
+      }
+      .card{
+        display:flex;
+        width:95%;
+      }
+		}
+		</style>
+		<title>Smoketopus' Reading Log</title>
+	</head>
+	<body>
+		<main>
+			<header></header>
+			<nav></nav>
+			<div class="content-wrap flex alignment">
+			<aside></aside>
+				<article>
+					<!-- Template
+		  using this page to experiment while i plan out a thing that connects to a spreadsheet i actually regularly update, mind the mess
+			<tr><td><img src="" alt=""></td><td>() </td></tr>
+			-->
+					<div class="centered">
+						<section class="cards">
+							<article class="card">
+								<img src="https://i.imgur.com/fyPaZTQ.jpeg" style="max-height:200px; loading='lazy';">
+								<div class="data" style="flex-direction:row; padding:30px;">
+								<div class="title"><b>Whisper of the Heart</b></div>
+								<div class="type" style="display:inline-block">Movie</div> - <div class="date" style="display:inline-block">4/27/2024</div>
+								<div class="description">The Country Roads song jumpscared me since I associate that so heavily with Fallout New Vegas, but it was a lovely movie, I'm glad I finally watched it!</div></div>
+							</article>
+							<!-- /card-one -->
+							<article class="card">
+								<p>content for card two</p>
+							</article>
+							<!-- /card-two -->
+							<article class="card">
+								<p>content for card three</p>
+							</article>
+							<!-- /card-three -->
+							<article class="card">
+								<p>content for card four</p>
+							</article>
+							<!-- /card-four -->
+						</section>
+					</div>
+				</article>
+			</div>
+		</main>
+	</body>
+</html>

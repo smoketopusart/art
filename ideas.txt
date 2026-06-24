@@ -1,0 +1,14 @@
+parenthesis marks priority
+
+
+- page in comics for 1 page oneshots for easy reading (high)
+- fix discord preview image to be the new frontpage, add previews for other pages I link (high)
+
+
+- transformers reference gallery (med) (start with tfp)
+- make the home page buttons shaded + animated! (Low)
+- adjusting the portfolio cards + page to be wider and stuff (low)
+- get some of my webgl toys up here maybe? or maybe some html 5 doodads? (low)
+- more fun javascript toys!
+- articles + tutorials about different lil things? (med)
+- chatbox?

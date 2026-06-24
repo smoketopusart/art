@@ -1,0 +1,9 @@
+/* CSS Document */
+
+html, body {
+	background-image: url("graphpaper3.png");
+}
+
+#log img{
+	max-width: 200px;
+}

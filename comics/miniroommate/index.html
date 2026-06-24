@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="/scripts/route.js"></script>
+		<link href="/style.css" rel="stylesheet" type="text/css">
+		<link href="../comics.css" rel="stylesheet" type="text/css">
+		<script>var targetCSV = `https://smoketopus.neocities.org/comics/miniroommate/miniroommate.csv`;</script>
+		<script src="/scripts/csvhandler.js"></script>
+		<script src="../comicfunctionality.js"></script>
+
+		<title>Mini roommate</title>
+	</head>
+	<body onLoad="Start()">
+    <main>
+      <header></header>
+      <nav></nav>
+      <div class="content-wrap flex alignment">
+        <article>
+		  <a id="webcomicFullLink" href="https://i.imgur.com/lTXLXMZ.png"><img id="webcomicImage" src="https://i.imgur.com/lTXLXMZ.png" alt="Mini Roommate"></a>
+			<div class="comicnav">
+				<button id="first" onclick="FirstPage()">First</button>
+				<button id="previous" onclick="PreviousPage()">Previous</button>
+				<p id="pageNumber">Cover</p>
+				<button id="next" onclick="NextPage()">Next</button>
+				<button id="last" onclick="LastPage()">Last</button>
+			</div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
