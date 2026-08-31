@@ -1,5 +1,6 @@
 :root {
   --dk-color: #f896c8;
+  --dk-url: url("/graphics/wallpaper.png") repeat bottom;
   --mid-color: #ffdaed;
   --lt-color: #fff7fb;
   --dkest-color: #e664ae;
@@ -19,7 +20,7 @@
 }
 
 body{
-  background: var(--dk-color) url("/graphics/wallpaper.png") repeat bottom;
+  background: var(--dk-color) ;
 }
 main{
   border: 5px double #ffffff;
