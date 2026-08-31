@@ -1,5 +1,25 @@
+:root {
+  --dk-color: #f896c8;
+  --mid-color: #ffdaed;
+  --lt-color: #fff7fb;
+  --dkest-color: #e664ae;
+  --accent: #c4fafe;
+  --shadow: #f896c880;
+  --white: #fff;
+}
+
+[data-theme='dark'] {
+    --dk-color: #6A3E9A;  /* Mid */
+    --mid-color: #4A227B; /* Dark */
+    --lt-color: #17143B; /* Darkest */
+    --dkest-color: #E7C8E7; /* Lightest */
+    --accent: #C266A7; 
+    --shadow: #4A227B80;
+    --white: #4A227B;
+}
+
 body{
-  background: #f992b4 url("/graphics/wallpaper.png") repeat bottom;
+  background: var(--dk-color) url("/graphics/wallpaper.png") repeat bottom;
 }
 main{
   border: 5px double #ffffff;
