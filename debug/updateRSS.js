@@ -38,9 +38,12 @@ function PostNewEntry(){
     let newImage = xmlDoc.createElement("image");
     newImage.innerHTML = document.getElementById("image").value;
     let newDescription = xmlDoc.createElement("description");
-    newDescription.innerHTML = document.getElementById("description").value;
-    newDescription.innerHTML += 
+        newDescription.innerHTML = document.getElementById("description").value;
+    if(newImage.innerHTML != ""){
+        newDescription.innerHTML += 
     "<![CDATA[<img src=\"" + newImage.innerHTML + "\"/>]]>"
+    }
+    
     let pubDate = xmlDoc.createElement("pubDate");
     const dateHeader = new Date().toLocaleString('en-GB', {
         timeZone: 'UTC',
