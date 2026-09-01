@@ -24,6 +24,20 @@ console.log("loading");
 // category is user defined
 // description is the MD the user created
 // post time is based on the time when the button is clicked
+
+function AddImageOption(){
+    var newImageField = document.createElement("INPUT");
+    //newImageField.id = "image";
+    //newImageField.className = "image";
+    newImageField.className = "image";
+
+    document.getElementById("imageOptionArea").appendChild(newImageField);
+}
+
+function SetCategory(category){
+    document.getElementById("category").value = category;
+
+}
 // guid can be that post timestamp
 function PostNewEntry(){
     //var items = xmlDoc.getElementsByTagName("item");
@@ -34,14 +48,18 @@ function PostNewEntry(){
     let newCategory = xmlDoc.createElement("category");
     newCategory.innerHTML = document.getElementById("category").value;
     let newLink = xmlDoc.createElement("link");
+    if(document.getElementById("link").value == "")
+        document.getElementById("link").value = "https://smoketopus.art";
     newLink.innerHTML = document.getElementById("link").value;
-    let newImage = xmlDoc.createElement("image");
-    newImage.innerHTML = document.getElementById("image").value;
+    let images = document.getElementsByClassName("image");
     let newDescription = xmlDoc.createElement("description");
-        newDescription.innerHTML = document.getElementById("description").value;
-    if(newImage.innerHTML != ""){
-        newDescription.innerHTML += 
-    "\n<![CDATA[<img src=\"" + newImage.innerHTML + "\"/>]]>"
+    newDescription.innerHTML = document.getElementById("description").value;
+
+    if(images[0].value != ""){
+        for(let i = 0; i <= images.length -1; i++){
+            let imageValue = images[i].value;
+            newDescription.innerHTML += "\n" + "<![CDATA[<img src=\"" + imageValue + "\"/>]]>";
+        }
     }
     
     let pubDate = xmlDoc.createElement("pubDate");
