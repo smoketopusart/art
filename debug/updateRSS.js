@@ -41,7 +41,7 @@ function PostNewEntry(){
         newDescription.innerHTML = document.getElementById("description").value;
     if(newImage.innerHTML != ""){
         newDescription.innerHTML += 
-    "<![CDATA[<img src=\"" + newImage.innerHTML + "\"/>]]>"
+    "\n<![CDATA[<img src=\"" + newImage.innerHTML + "\"/>]]>"
     }
     
     let pubDate = xmlDoc.createElement("pubDate");
