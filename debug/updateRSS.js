@@ -6,7 +6,7 @@
 function loadRSS(){
     console.log("loading");
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
+    xhttp.onloadstart = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             console.log("acceptable");
 
