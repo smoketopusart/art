@@ -10,16 +10,17 @@ function loadRSS(){
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             console.log("acceptable");
 
+            console.log("xmldoc is " + xmlDoc);
             var xmlDoc = xhttp.responseXML; //important to use responseXML here
             var serializer = new XMLSerializer();
-            var xmlString = serializer.serializeToString(xmlDoc);
-            document.getElementById("rssFeed").value += xmlString;        
+            //var xmlString = serializer.serializeToString(xmlDoc);
+            document.getElementById("rssFeed").value += xmlDoc;        
         }else{
             console.log("Hitting errors" + xhttp.statusText);
             document.getElementById("rssFeed").innerHTML = "test";
 
         }
-        xhttp.open("GET", "/rss.xml", true);
+        xhttp.open("GET", "https://smoketopus.art/rss.xml", true);
         xhttp.send();
 
     }
