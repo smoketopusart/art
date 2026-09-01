@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 <channel>
   <title>Smoketopus' Website</title>
   <description>Smoketopus' art website, with a focus on robot art and the occasional game</description>
@@ -11,7 +10,7 @@
   </lastBuildDate>
   <ttl>1500</ttl>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-  <atom:link href="https://smoketopus.neocities.org/rss.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://smoketopus.neocities.org/rss.xml" rel="self" type="application/rss+xml"/>
 <!--Get timestamps from https://timestampgenerator.com
 
 Template
@@ -45,7 +44,7 @@ Template
   Fri, 03 May 2024 15:30:25 +0000
   </pubDate>
   <category>Art</category>
-  <guid></guid>
+  <guid/>
 </item>
 
 <item>
@@ -60,7 +59,7 @@ Template
   Sat, 20 Apr 2024 21:23:54 +0000
   </pubDate>
   <category>Art</category>
-  <guid></guid>
+  <guid/>
 </item>
 
 <item>
@@ -76,7 +75,7 @@ Template
   Thu, 11 Apr 2024 05:00:21 +0000
   </pubDate>
   <category>Art</category>
-  <guid >https://i.imgur.com/y3MknuE.png</guid>
+  <guid>https://i.imgur.com/y3MknuE.png</guid>
 </item>
 
 <item>
@@ -89,7 +88,7 @@ Template
     Thu, 29 Feb 2024 19:11:53 +0000
   </pubDate>
   <category>Art</category>
-  <enclosure url="https://i.imgur.com/HluN79a.png" length="1687152" type="image/png" />
+  <enclosure url="https://i.imgur.com/HluN79a.png" length="1687152" type="image/png"/>
   <guid>https://i.imgur.com/HluN79a.png</guid>
 </item>
 
@@ -103,7 +102,7 @@ Template
   Sat, 18 Feb 2023 17:07:34 +0000
   </pubDate>
   <category>Art</category>
-  <enclosure url="https://i.imgur.com/MbW7UAI.png" length="in bytes" type="image/png" />
+  <enclosure url="https://i.imgur.com/MbW7UAI.png" length="in bytes" type="image/png"/>
   <guid>https://i.imgur.com/MbW7UAI.png</guid>
 </item>
 
@@ -117,7 +116,7 @@ Template
   Thu, 19 Jan 2023 15:52:05 +0000
   </pubDate>
   <category>Art</category>
-  <enclosure url="https://i.imgur.com/mGIjwQp.png" length="2026431" type="image/png" />
+  <enclosure url="https://i.imgur.com/mGIjwQp.png" length="2026431" type="image/png"/>
   <guid>https://i.imgur.com/mGIjwQp.png</guid>
 </item>
 
@@ -130,7 +129,7 @@ Template
   <pubDate>
     Thu, 19 Jan 2023 15:52:05 +0000
   </pubDate>
-  <enclosure url="https://i.imgur.com/tPlcdgE.png" length="1510517" type="image/png" />
+  <enclosure url="https://i.imgur.com/tPlcdgE.png" length="1510517" type="image/png"/>
   <category>Art</category>
   <guid>https://i.imgur.com/tPlcdgE.png</guid>
 </item>
@@ -239,7 +238,7 @@ Template
   </pubDate>
   <category>Comic</category>
   <guid>https://smoketopus.neocities.org/comics/shadowzoned/</guid>
-</item>
+<item><title>Big old RSS Test</title><category>testing</category><link>https://smoketopus.art</link><description>Sorry for anyone who subscribes to my RSS feed, I am testing something kind of weird right now that I just coded. But if this works, it'll be awesome for me!<![CDATA[<img src="https://smoketopus.art/graphics/banner.png"/>]]></description><pubDate>Tue, 01 Sept 2026 18:38:13 GMT</pubDate><guid>Tue, 01 Sept 2026 18:38:13 GMT</guid></item></item>
 
 </channel>
 </rss>

@@ -14,15 +14,12 @@ console.log("loading");
             
                 //
 
-                //document.getElementById("rssFeed").innerHTML = xmlString;
+                document.getElementById("rssFeed").innerHTML = xmlString;
 
 
                 
             })
 
-function loadRSS(){
-    
-}
 // title is user defined
 // category is user defined
 // description is the MD the user created
@@ -33,17 +30,17 @@ function PostNewEntry(){
 
     let newItem = xmlDoc.createElement("item");
     let newTitle = xmlDoc.createElement("title");
-    newTitle.innerHTML = "testing new shit";
+    newTitle.innerHTML = document.getElementById("title").value;
     let newCategory = xmlDoc.createElement("category");
-    newCategory.innerHTML = "test";
+    newCategory.innerHTML = document.getElementById("category").value;
     let newLink = xmlDoc.createElement("link");
-    newLink.innerHTML = "https://smoketopus.art";
+    newLink.innerHTML = document.getElementById("link").value;
     let newImage = xmlDoc.createElement("image");
-    newImage.innerHTML = "https://smoketopus.art/banner.png";
+    newImage.innerHTML = document.getElementById("image").value;
     let newDescription = xmlDoc.createElement("description");
-    newDescription.innerHTML = "testing my setup to make sure it all works! \n";
+    newDescription.innerHTML = document.getElementById("description").value;
     newDescription.innerHTML += 
-    "<![CDATA[<img src=\"" + newImage + "\"/>]]>"
+    "<![CDATA[<img src=\"" + newImage.innerHTML + "\"/>]]>"
     let pubDate = xmlDoc.createElement("pubDate");
     const dateHeader = new Date().toLocaleString('en-GB', {
         timeZone: 'UTC',
