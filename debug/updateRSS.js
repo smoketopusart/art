@@ -3,22 +3,31 @@
 // read RSS feed, see where things should be appended
 // onClick for the "post", we will start writing at the point mentioned
 
+
+var xmlDoc;
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+
+    xmlDoc = xhttp.responseXML; //important to use responseXML here
+    
+}
+xhttp.open("GET", "/rss.xml", true);
+xhttp.send();
+
+}
+
+
 function OnLoad(){
     console.log("loading");
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
 
-            var xmlDoc = xhttp.responseXML; //important to use responseXML here
-            var serializer = new XMLSerializer();
-            var xmlString = serializer.serializeToString(xmlDoc);
+    var serializer = new XMLSerializer();
+    var xmlString = serializer.serializeToString(xmlDoc);
 
+            document.getElementById("rssFeed").innerHTML = "test";
             document.getElementById("rssFeed").value += xmlString;
-        }
-        xhttp.open("GET", "/rss.xml", true);
-        xhttp.send();
-    }
-    
+
 }
 
 // title is user defined
