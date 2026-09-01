@@ -52,7 +52,7 @@ function PostNewEntry(){
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        }).replace(/(?:(\d),)/, '$1') + ' GMT';
+        }).replace(/(?:(\d),)/, '$1') + ' +0000';
     pubDate.innerHTML = dateHeader;
     let guID = xmlDoc.createElement("guid");
     guID.innerHTML = dateHeader;

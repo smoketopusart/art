@@ -238,7 +238,7 @@ Template
   </pubDate>
   <category>Comic</category>
   <guid>https://smoketopus.neocities.org/comics/shadowzoned/</guid>
-<item><title>Big old RSS Test</title><category>testing</category><link>https://smoketopus.art</link><description>Sorry for anyone who subscribes to my RSS feed, I am testing something kind of weird right now that I just coded. But if this works, it'll be awesome for me!<![CDATA[<img src="https://smoketopus.art/graphics/banner.png"/>]]></description><pubDate>Tue, 01 Sept 2026 18:38:13 GMT</pubDate><guid>Tue, 01 Sept 2026 18:38:13 GMT</guid></item></item>
+<item><title>Testing, again</title><category>test</category><link>https://smoketopus.art</link><description>testing something i made to make updating my rss feed easier<![CDATA[<img src="https://smoketopus.art/graphics/banner.png"/>]]></description><pubDate>Tue, 01 Sept 2026 18:42:36 +0000</pubDate><guid>Tue, 01 Sept 2026 18:42:36 +0000</guid></item></item>
 
 </channel>
 </rss>
