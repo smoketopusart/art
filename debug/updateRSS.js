@@ -70,7 +70,8 @@ function PostNewEntry(){
 
 
 
-    xmlDoc.getElementsByTagName("item")[xmlDoc.getElementsByTagName("item").length-1].appendChild(newItem);
+    xmlDoc.getElementsByTagName("channel")[0].appendChild(newItem);
+    //xmlDoc.getElementsByTagName("item")[xmlDoc.getElementsByTagName("item").length-1].appendChild(newItem);
 
     var xmlNewText = new XMLSerializer().serializeToString(xmlDoc);
     document.getElementById("rssFeed").innerHTML = xmlNewText;
