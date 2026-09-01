@@ -5,7 +5,7 @@
 var xmlDoc;
 
 console.log("loading");
-    fetch("https://smoketopus.art/rss.xml")
+    fetch("/rss.xml")
             .then((response) => response.text())
             .then((xmlString) => {
                 const parser = new DOMParser();
