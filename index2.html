@@ -27,21 +27,50 @@
 			
 			<ul id="updates">
 				<center><img src="https://i.imgur.com/kOj3Bz8.gif" alt="Updates" ></center>
-				<li><strong>(Sep 09 2025)</strong> still updating things!!</a></li>
-				<li><strong>(Jan 25 2025)</strong> I'm still here! Need to update my 2024 art page and everything else! I also have an ask box now <a href="https://smoketopus.straw.page/">over here!</a></li>
-				<li><strong>(Jan 08 2023)</strong> Happy new year! Created new page for my 2023 art <a href="/gallery/archive/2023.html">here</a></li>
-				<li><strong>(Nov 21 2022)</strong> Uploaded Volume 2 of my TFP comic! Check it out <a href="/comics/decepticonnomore/">here!</a></li>
-				<li><strong>(Sep 15 2022)</strong> FINALLY uploaded my Iron Leaguer character sorter, check it out <a href="/funstuff/ironleaguersort/">here!</a></li>
-				<li><strong>(Sep 04 2022)</strong> Created an RSS feed, updating video logs. I'll try to keep up with the RSS feed, but it'll probably just be updated when I put a new page in. (I'll try to get everything retroactively in there as well, but that might take a bit)</li>
-				<li><strong>(Aug 29 2022)</strong> Cleaned up URLS and moved some of my main pages to the appropriate folder for better urls, also changed the background while i figure out a way to get the gradient working the way I want it to. There are also now reading logs in my fun category to keep track of media I'm watching</li>
-				<li><strong>(Aug 27 2022)</strong> Added archive portion to gallery to show EVERYTHING by year, so far only added 2022, also added a comics tab and added one of my comics! Also added music to my tf shrine (not on autoplay tho)&nbsp;</li>
-				<li><strong>(Mar 03 2022)</strong> Updating for Tfcon!&nbsp;</li>
-				<li><strong>(Dec 09 2021)</strong> Updating my theme, loads of cleaning!</li>
-				<li><strong>(Dec 03 2021)</strong> Adjusting the size of this beast so it doesn't always take up the whole screen, kinda throwing around thoughts on what I might like to do with the navigation bar...&nbsp;&nbsp;</li>
-				<li><strong>(Dec 02 2021)</strong> yes I am updating this 3 times in one day, added images, all pages should have SOMETHING, gallery shows some basic images, but I'm gonna add more later for sure!&nbsp;</li>
-				<li><strong>(Dec 02 2021)</strong> I think all pages should now link *somewhere*, need to work on my art pages and upload images haha, also want to maybe make a shrine for final fantasy xiv/my adventures in it! Also added background image so this site looks a biiiiit better</li>
-				<li><strong>(Dec 02 2021)</strong> Slowly but surely...</li>
-				<li><strong>(Dec 01 2021)</strong> This is ALL under construction, but soon.......</li>
+				<script>
+					    async function fetchRSS() {
+        const fetchUrl = "https://smoketopus.art/rss.xml";
+        
+        try {
+            console.log('Fetching URL:', fetchUrl); // Debugging 1: Log the request URL
+            const response = await fetch(fetchUrl);
+            const data = await response.text();
+            
+            console.log('Data fetched:', data); // Debugging 2: Log the raw data
+            
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "application/xml");
+
+            console.log('Parsed XML:', xmlDoc); // Debugging 3: Log the parsed XML
+
+            let items = xmlDoc.querySelectorAll("item");
+            const scrollContainer = document.getElementById('update-Item');
+            scrollContainer.innerHTML = '';
+
+			
+
+                const title = items[items.length-1].querySelector("title").textContent;
+                const link = items[items.length-1].querySelector("link").textContent;
+                const description = items[items.length-1].querySelector("description").textContent;
+                let pubDate = items[items.length-1].querySelector("pubDate").textContent;
+
+                const newsItem = document.createElement('div');
+                newsItem.classList.add('news-item');
+                newsItem.innerHTML = `
+                    <h3><a href="${link}" target="_blank">${title}</a></h3>
+                    <p>${description}</p>
+                    <small>${pubDate}</small>
+                `;
+
+                scrollContainer.appendChild(newsItem);
+        } catch (error) {
+            console.error('Error fetching the RSS feed:', error);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', fetchRSS);
+				</script>
+				<li id="update-Item"></li>
 			</ul>
 			<form method="post" action="https://poll.pollcode.com/93715519"><div style="background-color:#EECFE3;padding:2px;width:271px;font-family:Verdana;font-size:small;color:#000B36;box-shadow: 0px 0px 5px #888;"><div style="padding:2px 0px 4px 2px;"><strong>If you were a transformer, what would your alt mode be?</strong></div><input type="radio" name="answer" value="1" id="answer937155191" style="float:left;" /><label for="answer937155191" style="float:left;width:246px;">Some kind of ground-based vehicle (Cars, trucks, tanks, etc)</label><input type="radio" name="answer" value="2" id="answer937155192" style="float:left;" /><label for="answer937155192" style="float:left;width:246px;">Some kind of flying vehicle (Planes, helicopters, space ships)</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer937155193" style="float:left;" /><label for="answer937155193" style="float:left;width:246px;">Everyday electronic/mechanical objects (microscope, game controller, etc)</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer937155194" style="float:left;" /><label for="answer937155194" style="float:left;width:246px;">Everyday non-electronic/mechanical objects (Food, plushies, soap)</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="5" id="answer937155195" style="float:left;" /><label for="answer937155195" style="float:left;width:246px;">Larger animals (Cheetahs, elephants, crocodiles, etc)</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="6" id="answer937155196" style="float:left;" /><label for="answer937155196" style="float:left;width:246px;">Small animals (Insects, mainly)</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="7" id="answer937155197" style="float:left;" /><label for="answer937155197" style="float:left;width:246px;">Something else (PLEASE tell me)</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
         </article>
