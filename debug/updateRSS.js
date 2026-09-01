@@ -94,6 +94,16 @@ function PostNewEntry(){
     var xmlNewText = new XMLSerializer().serializeToString(xmlDoc);
     document.getElementById("rssFeed").innerHTML = xmlNewText;
 
+    // clear form when complete!!
+    document.getElementById("title").value = "";
+    document.getElementById("category").value = "";
+    document.getElementById("link").value = "";
+    for(let i = 0; i <= images.length -1; i++){
+        images[i].value = "";
+    if(i > 0)
+        images[i].remove();
+    }
+    document.getElementById("description").value = "";
 }
 
 // should start by filling the textbox with the RSS feed, and THEN read from that text box
