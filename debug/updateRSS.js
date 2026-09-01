@@ -4,14 +4,20 @@
 // onClick for the "post", we will start writing at the point mentioned
 
 function OnLoad(){
+    console.log("loading");
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
 
-        var xmlDoc = xhttp.responseXML; //important to use responseXML here
+            var xmlDoc = xhttp.responseXML; //important to use responseXML here
+        }
+        xhttp.open("GET", "/rss.xml", true);
+        xhttp.send();
     }
-    xhttp.open("GET", "/rss.xml", true);
-    xhttp.send();
+    var serializer = new XMLSerializer();
+    var xmlString = serializer.serializeToString(xmlDoc);
+
+    document.getElementById("rssFeed").value += xmlString;
 }
 
 // title is user defined
