@@ -1,6 +1,20 @@
-parenthesis marks priority
+- Is there a nice way to display my videos? Is that even worth?
+- page for my umamusume game stuff!
+- clean media list stuff to be more sensible
+- dark/light mode
+- updates to match my new style
+- comic specifically for shorter comics/doodles
 
 
+
+
+
+
+
+
+
+
+older ideas
 - page in comics for 1 page oneshots for easy reading (high)
 - fix discord preview image to be the new frontpage, add previews for other pages I link (high)
 
