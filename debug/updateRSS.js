@@ -58,7 +58,7 @@ function PostNewEntry(){
     if(images[0].value != ""){
         for(let i = 0; i <= images.length -1; i++){
             let imageValue = images[i].value;
-            newDescription.innerHTML += "\n<br>" + "<![CDATA[<img src=\"" + imageValue + "\"/>]]>";
+            newDescription.innerHTML += "\n" + "<![CDATA[<img src=\"" + imageValue + "\"/>]]>";
         }
     }
     
